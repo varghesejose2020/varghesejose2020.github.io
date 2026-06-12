@@ -400,11 +400,24 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+ <!-- <footer id="footer">
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>2025 Varghese Jose.</span></strong>
-      </div>
+      </div> -->
+
+      <footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span id="year"></span> Varghese Jose.</strong>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const year = document.getElementById("year");
+  year.innerHTML = new Date().getFullYear();
+</script>
       <div class="credits">
             Hosted on <a href="https://github.com/varghesejose2020/"><i class="bx bxl-github"></i></a>
       </div>
